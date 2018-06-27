@@ -1,10 +1,44 @@
-
-h1{
-color: tomato;
+body {
+	text-align: center 50px;
 }
 
-p{
-color: white;
-text-transform: uppercase;
-background-color: red;
+.box {
+	display: inline-block;
+	height: 100px;
+	width: 750px;
+}
+
+div.blue {
+	background-color: blue;
+}
+
+div.green{
+	background-color: green;
+}
+
+div.red{
+	background-color: red;
+}
+
+div.purple{
+	background-color: purple;
+}
+
+@media (max-width: 600px) {
+	div.green, div.red {
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) {
+
+	div.blue, div.green, div.red, div.purple{
+		width: 100%;
+	}
+}
+
+div.container {
+	height: 200px;
+	width: 200px;
+	background-color: yellow;
 }
